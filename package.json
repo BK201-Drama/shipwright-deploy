@@ -1,5 +1,5 @@
 {
-  "name": "easy-project",
+  "name": "shipwright-deploy",
   "version": "1.0.0",
   "description": "Deploy CLI - 一键部署前后端到 VPS",
   "main": "dist/index.js",
@@ -13,9 +13,13 @@
     "lint": "eslint src --ext .ts",
     "prepare": "npm run build"
   },
-  "keywords": ["deploy", "cli", "vps", "docker", "devops"],
-  "author": "",
+  "keywords": ["deploy", "cli", "vps", "docker", "devops", "easy-deploy"],
+  "author": "bk201_1393",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BK201-Drama/shipwright-deploy.git"
+  },
   "dependencies": {
     "commander": "^11.1.0",
     "inquirer": "^9.2.12",
