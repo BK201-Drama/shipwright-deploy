@@ -1,0 +1,39 @@
+{
+  "name": "easy-project",
+  "version": "1.0.0",
+  "description": "Deploy CLI - 一键部署前后端到 VPS",
+  "main": "dist/index.js",
+  "bin": {
+    "deploy": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepare": "npm run build"
+  },
+  "keywords": ["deploy", "cli", "vps", "docker", "devops"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "ssh2": "^1.15.0",
+    "dotenv": "^16.3.1",
+    "ora": "^7.0.1",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/ssh2": "^1.11.18",
+    "@types/inquirer": "^9.0.7",
+    "typescript": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "ts-jest": "^29.1.1"
+  }
+}
