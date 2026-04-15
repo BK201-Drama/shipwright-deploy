@@ -1,6 +1,6 @@
 {
   "name": "shipwright-deploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy CLI - 一键部署前后端到 VPS",
   "main": "dist/index.js",
   "bin": {

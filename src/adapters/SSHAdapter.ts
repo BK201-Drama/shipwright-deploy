@@ -186,7 +186,7 @@ export class SSHConnectionPool {
   private connections: Map<string, SSHAdapter> = new Map();
 
   async getConnection(config: VPSConfig): Promise<SSHAdapter> {
-    const key = `${config.host}:${config.port}`;
+    const key = `${config.username}@${config.host}:${config.port}`;
     
     let adapter = this.connections.get(key);
     if (!adapter || !adapter.isConnected()) {
